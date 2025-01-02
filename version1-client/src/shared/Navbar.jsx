@@ -1,11 +1,13 @@
-import { CiSearch } from "react-icons/ci";
+import { CiMenuBurger, CiSearch } from "react-icons/ci";
 import { IoPersonCircleOutline } from "react-icons/io5";
 import { CiShoppingCart } from "react-icons/ci";
 export default function Navbar() {
   return (
    <div className="bg-black h-[70px]">
-     <div className="max-w-6xl flex justify-around items-center mx-auto">
-     <div><img className="w-16 md:w-24 h-10 md:h-12  m-2" src="https://i.ibb.co.com/gv291qV/G-Glogo.png" alt="" /></div>
+     <div className="max-w-6xl flex gap-2 justify-around items-center mx-auto">
+     <div className="flex justify-between items-center">
+     <span className="md:hidden flex font-bold text-2xl text-white"><CiMenuBurger /></span>
+      <img className="w-14 md:w-24 h-10 md:h-12  m-2" src="https://i.ibb.co.com/gv291qV/G-Glogo.png" alt="" /></div>
      <div className="flex justify-center gap-2">
      <div className="relative"> <input type="text" className="w-50 md:w-[500px] p-3 mx-auto border border-white rounded-md" placeholder="Search products"/>
      <span className="text-orange-600  absolute  text-2xl top-4 right-0 mr-3"><CiSearch /></span></div>
