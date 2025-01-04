@@ -181,11 +181,41 @@ export default function Footer() {
         </div>
       </div>
       {/* part 2 */}
-      <div className="bg-black text-white md:p-6 p-2">
+      <div className="bg-black text-white md:p-6 p-2 flex justify-between items-center">
         <h1>
           ©2024 Nexlinbd, All rights reserved. Developed by{" "}
-          <span className="font-bold">okobiz.</span>
+          <motion.span
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.4,
+              scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+            }}
+            whileHover={{
+              x: 4,
+              color: "#f26e21",
+            }}
+            className="font-bold px-2 text-xl"
+          >
+            <Link>okobiz</Link>
+          </motion.span>
         </h1>
+        <div>
+          <div className="flex items-center gap-2">
+            <span>
+              <img className="w-10 h-10" src={facebookImg} alt="" />
+            </span>
+            <span>
+              <img className="w-10 h-10" src={whatsappImg} alt="" />
+            </span>
+            <span>
+              <img className="w-10 h-10" src={youtubeImg} alt="" />
+            </span>
+            <span>
+              <img className="w-10 h-10" src={instaImg} alt="" />
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   );
