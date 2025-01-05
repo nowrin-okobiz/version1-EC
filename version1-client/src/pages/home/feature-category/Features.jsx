@@ -13,7 +13,7 @@ import videoGame from "../../../assets/featureImg/video_game.png";
 import watchs from "../../../assets/featureImg/watchs.png";
 export default function Features() {
   return (
-    <div className=" my-4">
+    <div className=" mb-10">
       <h1 className="py-5 text-3xl text-center">Featured Categories</h1>
       <div>
         <Marquee>

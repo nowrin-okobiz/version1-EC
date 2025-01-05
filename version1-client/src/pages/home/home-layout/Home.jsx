@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Banner></Banner>
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto ">
         <Features></Features>
         <BestSelling></BestSelling>
       </div>

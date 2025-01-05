@@ -5,7 +5,8 @@
     "brand": "SoundTech",
     "description": "High-quality wireless Bluetooth headphones with noise-canceling technology and 20-hour battery life.",
     "image": "https://cdn.thewirecutter.com/wp-content/media/2023/07/bluetoothheadphones-2048px-6132.jpg?auto=webp&quality=75&width=1024",
-    "review": true
+    "review": true,
+    "price":"20000"
   },
   {
     "productId": 2,
@@ -13,7 +14,8 @@
     "brand": "VisionX",
     "description": "55-inch 4K Ultra HD Smart TV with built-in streaming apps and voice control.",
     "image": "https://m.media-amazon.com/images/I/71Am8lvWpoL.jpg",
-    "review": false
+    "review": false,
+    "price":"50000"
   },
   {
     "productId": 3,
@@ -21,7 +23,8 @@
     "brand": "PowerPlay",
     "description": "High-performance gaming laptop with Intel i7 processor, 16GB RAM, and NVIDIA RTX 3060 graphics card.",
     "image": "https://t4.ftcdn.net/jpg/05/26/62/67/360_F_526626785_PPVROL1d2W88Qa02DS0jDDxzwnPkHEE1.jpg",
-    "review": true
+    "review": true,
+    "price":"78000"
   },
   {
     "productId": 4,
@@ -29,7 +32,8 @@
     "brand": "TechCore",
     "description": "Latest flagship smartphone with a stunning AMOLED display, 128GB storage, and 5G connectivity.",
     "image": "https://t3.ftcdn.net/jpg/01/97/97/24/360_F_197972442_k2MxYlbDg4XufIp3O64jiJp4VYkExogX.jpg",
-    "review": true
+    "review": true,
+    "price":"90000"
   },
   {
     "productId": 5,
@@ -37,7 +41,8 @@
     "brand": "AudioWave",
     "description": "Compact wireless earbuds with deep bass, sweat resistance, and touch controls.",
     "image": "https://m.media-amazon.com/images/I/61joErBxERL.jpg",
-    "review": false
+    "review": false,
+    "price":"27000"
   },
   {
     "productId": 6,
@@ -45,7 +50,8 @@
     "brand": "PhotoPro",
     "description": "24.2 MP digital camera with interchangeable lenses and 4K video recording capabilities.",
     "image": "https://cute.camera/cdn/shop/files/Cute_Camera_Co_Nikon_L340_Hero_440x.jpg?v=1730809628",
-    "review": true
+    "review": true,
+    "price":"120000"
   },
   {
     "productId": 7,
@@ -53,7 +59,8 @@
     "brand": "FitGear",
     "description": "Stylish smartwatch with fitness tracking, heart rate monitoring, and waterproof design.",
     "image": "https://t3.ftcdn.net/jpg/00/85/51/56/360_F_85515668_dbMmOjChn3nNgpl8vKlQ7IXtHgboiuPB.jpg",
-    "review": false
+    "review": false,
+    "price":"260000"
   },
   {
     "productId": 8,
@@ -61,7 +68,8 @@
     "brand": "BoomBox",
     "description": "Loud and portable Bluetooth speaker with 12-hour battery life and waterproof construction.",
     "image": "https://media.wired.com/photos/669ae8feb10d234a979b0624/master/w_320,c_limit/Sonos-Roam-2-Bluetooth-Speaker-Offwhite-Background-SOURCE-Amazon.jpg",
-    "review": true
+    "review": true,
+    "price":"220000"
   },
   {
     "productId": 9,
@@ -69,7 +77,8 @@
     "brand": "KeyMaster",
     "description": "RGB mechanical keyboard with customizable lighting and tactile switches for gamers.",
     "image": "https://mechanicalkeyboards.com/cdn/shop/articles/keyboard1.png?v=1708532767&width=940",
-    "review": false
+    "review": false,
+    "price":"540000"
   },
   {
     "productId": 10,
@@ -77,6 +86,7 @@
     "brand": "CleanBot",
     "description": "Smart robot vacuum cleaner with app control, scheduled cleaning, and powerful suction.",
     "image": "https://media.istockphoto.com/id/1175873051/photo/cleaner-robot.jpg?s=612x612&w=0&k=20&c=BYEoRHm2xK_U6gA_seaiWETNHbU8zb5EcOsRJG9acxs=",
-    "review": true
+    "review": true,
+    "price":"87000"
   }
 ]
