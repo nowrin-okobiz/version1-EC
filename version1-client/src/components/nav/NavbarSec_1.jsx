@@ -28,7 +28,7 @@ export default function NavbarSec_1() {
     <div>
       {/* Navbar Section 1 */}
       <div className="nav-sec-1">
-        <div className="bg-[#191a20] h-[75px] p-2">
+        <div className="bg-[#191a20] h-[70px] p-2">
           <div className="max-w-6xl flex gap-2 justify-between items-center mx-auto">
             <div className="flex items-center">
               <button
@@ -48,14 +48,14 @@ export default function NavbarSec_1() {
               <div className="relative">
                 <input
                   type="text"
-                  className="w-44 md:w-[400px] p-3 border border-white rounded-md"
+                  className="w-44 md:w-[400px] h-9 p-3 border border-white rounded-md"
                   placeholder="Search products"
                 />
-                <span className="text-[#f26e21] absolute text-2xl top-4 right-0 mr-3">
+                <span className="text-[#f26e21] absolute text-2xl top-2 right-0 mr-3">
                   <CiSearch />
                 </span>
               </div>
-              <button className="bg-[#f26e21] p-3 rounded-md text-white">
+              <button className="bg-[#f26e21] h-9 px-4 rounded-md text-white">
                 Submit
               </button>
             </div>

@@ -30,7 +30,7 @@ export default function NavbarSec_2() {
 
                     {/* Subcategories Dropdown */}
                     {category.subcategories.length > 0 && (
-                      <ul className="absolute -left-5 top-full mt-0 bg-white text-gray-800 w-48 shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-300 hidden group-hover:block">
+                      <ul className="absolute -left-5 top-full mt-3 bg-gray-100 border-t-2 border-[#f26e21] text-gray-800 w-48 shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-300 hidden group-hover:block">
                         {category.subcategories.map((subcategory, subIndex) => (
                           <li
                             key={subIndex}

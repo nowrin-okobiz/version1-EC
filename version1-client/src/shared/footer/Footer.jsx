@@ -17,55 +17,43 @@ export default function Footer() {
           {/* 1st column */}
           <div className="col-span-3 text-start md:p-5 ">
             <ul className="">
-              <li className="font-bold text-xl">About US</li>
-              <Link>
-                {" "}
-                <li className="py-2">
-                  <div className="flex items-center gap-2">
-                    {" "}
-                    <span>
-                      <CiLocationOn />
-                    </span>
-                    <h1>address</h1>
-                  </div>
-                </li>
-              </Link>
-              <Link>
-                {" "}
-                <li className="py-2">
-                  <div className="flex items-center gap-2">
-                    {" "}
-                    <span>
-                      <MdEmail />
-                    </span>
-                    <h1>gadget@gmail.com</h1>
-                  </div>
-                </li>
-              </Link>
-              <Link>
-                {" "}
-                <li className="py-2">
-                  <div className="flex items-center gap-2">
-                    {" "}
-                    <span>
-                      <MdEmail />
-                    </span>
-                    <h1>sales@gadget.com.bd</h1>
-                  </div>
-                </li>
-              </Link>
-              <Link>
-                {" "}
-                <li className="py-2">
-                  <div className="flex items-center gap-2">
-                    {" "}
-                    <span>
-                      <FaPhoneAlt />
-                    </span>
-                    <h1>017777711</h1>
-                  </div>
-                </li>
-              </Link>
+              <li className="font-bold text-xl">About US</li>{" "}
+              <li className="py-2">
+                <div className="flex items-center gap-2">
+                  {" "}
+                  <span>
+                    <CiLocationOn />
+                  </span>
+                  <h1>address</h1>
+                </div>
+              </li>{" "}
+              <li className="py-2">
+                <div className="flex items-center gap-2">
+                  {" "}
+                  <span>
+                    <MdEmail />
+                  </span>
+                  <h1>gadget@gmail.com</h1>
+                </div>
+              </li>{" "}
+              <li className="py-2">
+                <div className="flex items-center gap-2">
+                  {" "}
+                  <span>
+                    <MdEmail />
+                  </span>
+                  <h1>sales@gadget.com.bd</h1>
+                </div>
+              </li>{" "}
+              <li className="py-2">
+                <div className="flex items-center gap-2">
+                  {" "}
+                  <span>
+                    <FaPhoneAlt />
+                  </span>
+                  <h1>017777711</h1>
+                </div>
+              </li>
               <Link>
                 {" "}
                 <li className="py-1">
@@ -180,8 +168,9 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <hr />
       {/* part 2 */}
-      <div className="bg-black text-white md:p-6 p-2 flex justify-between items-center">
+      <div className="bg-black text-white md:p-6 p-2 flex justify-center items-center">
         <h1>
           ©2024 Nexlinbd, All rights reserved. Developed by{" "}
           <motion.span
@@ -200,7 +189,7 @@ export default function Footer() {
             <Link>okobiz</Link>
           </motion.span>
         </h1>
-        <div>
+        {/* <div>
           <div className="flex items-center gap-2">
             <span>
               <img className="w-10 h-10" src={facebookImg} alt="" />
@@ -215,7 +204,7 @@ export default function Footer() {
               <img className="w-10 h-10" src={instaImg} alt="" />
             </span>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
