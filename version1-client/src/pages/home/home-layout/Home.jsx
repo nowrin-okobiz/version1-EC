@@ -6,6 +6,7 @@ import img1 from "../../../assets/bannerImg/01.jpg";
 import img2 from "../../../assets/bannerImg/02.jpg";
 import img3 from "../../../assets/bannerImg/03.png";
 import img4 from "../../../assets/bannerImg/04.jpg";
+import NewProduct from "../new arrival/NewProduct";
 export default function Home() {
   return (
     <>
@@ -14,6 +15,7 @@ export default function Home() {
         <Features></Features>
         <BestSelling></BestSelling>
         <Offer></Offer>
+        <NewProduct></NewProduct>
       </div>
     </>
   );

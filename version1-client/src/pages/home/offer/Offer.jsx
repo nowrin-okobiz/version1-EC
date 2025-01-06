@@ -51,8 +51,6 @@ export default function Offer() {
           </div>
         </div>
       </div>
-      <h1>Offer Product</h1>
-      <div></div>
     </div>
   );
 }

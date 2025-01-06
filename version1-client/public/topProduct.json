@@ -3,100 +3,110 @@
     "productId": 1,
     "productName": "Wireless Bluetooth Headphones",
     "brand": "SoundTech",
+    "category": "Electronics",
     "description": "High-quality wireless Bluetooth headphones with noise-canceling technology and 20-hour battery life.",
     "image": "https://cdn.thewirecutter.com/wp-content/media/2023/07/bluetoothheadphones-2048px-6132.jpg?auto=webp&quality=75&width=1024",
     "review": true,
-    "price":"20000",
-    "discount":"2000"
+    "price": "20000",
+    "discount": "2000"
   },
   {
     "productId": 2,
     "productName": "4K Ultra HD Smart TV",
     "brand": "VisionX",
+    "category": "Home Appliances",
     "description": "55-inch 4K Ultra HD Smart TV with built-in streaming apps and voice control.",
     "image": "https://m.media-amazon.com/images/I/71Am8lvWpoL.jpg",
     "review": false,
-    "price":"50000",
-    "discount":"5%"
+    "price": "50000",
+    "discount": "5%"
   },
   {
     "productId": 3,
     "productName": "Gaming Laptop",
     "brand": "PowerPlay",
+    "category": "Computers",
     "description": "High-performance gaming laptop with Intel i7 processor, 16GB RAM, and NVIDIA RTX 3060 graphics card.",
     "image": "https://t4.ftcdn.net/jpg/05/26/62/67/360_F_526626785_PPVROL1d2W88Qa02DS0jDDxzwnPkHEE1.jpg",
     "review": true,
-    "price":"78000",
-    "discount":""
+    "price": "78000",
+    "discount": ""
   },
   {
     "productId": 4,
     "productName": "Smartphone",
     "brand": "TechCore",
+    "category": "Mobiles",
     "description": "Latest flagship smartphone with a stunning AMOLED display, 128GB storage, and 5G connectivity.",
     "image": "https://t3.ftcdn.net/jpg/01/97/97/24/360_F_197972442_k2MxYlbDg4XufIp3O64jiJp4VYkExogX.jpg",
     "review": true,
-    "price":"90000",
-    "discount":""
+    "price": "90000",
+    "discount": ""
   },
   {
     "productId": 5,
     "productName": "Wireless Earbuds",
     "brand": "AudioWave",
+    "category": "Electronics",
     "description": "Compact wireless earbuds with deep bass, sweat resistance, and touch controls.",
     "image": "https://m.media-amazon.com/images/I/61joErBxERL.jpg",
     "review": false,
-    "price":"27000",
-    "discount":"2000"
+    "price": "27000",
+    "discount": "2000"
   },
   {
     "productId": 6,
     "productName": "Digital Camera",
     "brand": "PhotoPro",
+    "category": "Cameras",
     "description": "24.2 MP digital camera with interchangeable lenses and 4K video recording capabilities.",
     "image": "https://cute.camera/cdn/shop/files/Cute_Camera_Co_Nikon_L340_Hero_440x.jpg?v=1730809628",
     "review": true,
-    "price":"120000",
-    "discount":"27%"
+    "price": "120000",
+    "discount": "27%"
   },
   {
     "productId": 7,
     "productName": "Smartwatch",
     "brand": "FitGear",
+    "category": "Wearables",
     "description": "Stylish smartwatch with fitness tracking, heart rate monitoring, and waterproof design.",
     "image": "https://t3.ftcdn.net/jpg/00/85/51/56/360_F_85515668_dbMmOjChn3nNgpl8vKlQ7IXtHgboiuPB.jpg",
     "review": false,
-    "price":"260000",
-    "discount":""
+    "price": "260000",
+    "discount": ""
   },
   {
     "productId": 8,
     "productName": "Portable Speaker",
     "brand": "BoomBox",
+    "category": "Audio",
     "description": "Loud and portable Bluetooth speaker with 12-hour battery life and waterproof construction.",
     "image": "https://media.wired.com/photos/669ae8feb10d234a979b0624/master/w_320,c_limit/Sonos-Roam-2-Bluetooth-Speaker-Offwhite-Background-SOURCE-Amazon.jpg",
     "review": true,
-    "price":"220000",
-    "discount":""
+    "price": "220000",
+    "discount": ""
   },
   {
     "productId": 9,
     "productName": "Mechanical Keyboard",
     "brand": "KeyMaster",
+    "category": "Accessories",
     "description": "RGB mechanical keyboard with customizable lighting and tactile switches for gamers.",
     "image": "https://mechanicalkeyboards.com/cdn/shop/articles/keyboard1.png?v=1708532767&width=940",
     "review": false,
-    "price":"540000",
-    "discount":"7%"
+    "price": "540000",
+    "discount": "7%"
   },
   {
     "productId": 10,
     "productName": "Robot Vacuum Cleaner",
     "brand": "CleanBot",
+    "category": "Home Appliances",
     "description": "Smart robot vacuum cleaner with app control, scheduled cleaning, and powerful suction.",
     "image": "https://media.istockphoto.com/id/1175873051/photo/cleaner-robot.jpg?s=612x612&w=0&k=20&c=BYEoRHm2xK_U6gA_seaiWETNHbU8zb5EcOsRJG9acxs=",
     "review": true,
-    "price":"87000",
-    "discount":""
+    "price": "87000",
+    "discount": ""
   }
 ]
