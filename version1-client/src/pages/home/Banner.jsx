@@ -1,12 +1,7 @@
-import img1 from "../../assets/bannerImg/01.jpg";
-import img2 from "../../assets/bannerImg/02.jpg";
-import img3 from "../../assets/bannerImg/03.png";
-import img4 from "../../assets/bannerImg/04.jpg";
-
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
-export default function Banner() {
+export default function Banner({ img1, img2, img3, img4 }) {
   return (
     <div className="w-full">
       <Carousel autoPlay>

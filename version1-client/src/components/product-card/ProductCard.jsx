@@ -1,16 +1,33 @@
 export default function ProductCard({ item }) {
-  const { productId, productName, brand, description, image, review, price } =
-    item;
+  const {
+    productId,
+    productName,
+    brand,
+    description,
+    image,
+    review,
+    price,
+    discount,
+  } = item;
+
   return (
     <div>
       <div className="border rounded-lg shadow-lg hover:shadow-xl transition duration-300 h-[400px] flex flex-col flex-grow justify-between ">
         {/* Image Section */}
-        <div className="h-48 w-full flex items-center justify-center ">
+        <div className="h-48 w-full flex items-center justify-center relative">
           <img
             src={image}
             alt={productName}
             className="max-h-full object-contain"
           />
+          <div className="absolute top-0.5 right-0.5">
+            {discount && (
+              <p className="bg-orange-600 text-white p-2 px-2 py-1 rounded-tl-lg rounded-br-lg  text-sm md:text-base font-semibold uppercase">
+                {" "}
+                {discount} off
+              </p>
+            )}
+          </div>
         </div>
 
         {/* Content Section */}
