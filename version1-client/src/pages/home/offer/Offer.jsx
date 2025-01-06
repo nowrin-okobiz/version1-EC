@@ -19,7 +19,7 @@ export default function Offer() {
     <div>
       <div className="grid grid-cols-1 md:grid-cols-6 py-1 ">
         <div className="col-span-4">
-          <img className="h-[200px] md:h-[400px]" src={offerImg} alt="" />
+          <img className="h-[200px] md:h-[430px]" src={offerImg} alt="" />
         </div>
         <div className="col-span-2 border ">
           <div className=" ">

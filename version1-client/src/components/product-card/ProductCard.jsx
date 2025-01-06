@@ -17,18 +17,19 @@ export default function ProductCard({ item }) {
   if (discount) {
     if (discount.includes("%")) {
       // Percentage discount
-      const discountPercentage = parseFloat(discount);
+      const discountPercentage = parseInt(discount);
       finalPrice = numericPrice - (numericPrice * discountPercentage) / 100;
     } else {
       // Flat taka discount
       const discountTaka = Number(discount);
       finalPrice = numericPrice - discountTaka;
+      finalPrice = Math.ceil(finalPrice);
     }
   }
 
   return (
     <div>
-      <div className="border rounded-lg shadow-lg hover:shadow-xl transition duration-300 h-[400px] flex flex-col flex-grow justify-between ">
+      <div className="border rounded-lg shadow-lg hover:shadow-xl transition duration-300 h-[430px] flex flex-col flex-grow justify-between overflow-hidden">
         {/* Image Section */}
         <div className="h-48 w-full flex items-center justify-center relative">
           <img
