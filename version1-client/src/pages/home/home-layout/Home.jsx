@@ -7,6 +7,9 @@ import img2 from "../../../assets/bannerImg/02.jpg";
 import img3 from "../../../assets/bannerImg/03.png";
 import img4 from "../../../assets/bannerImg/04.jpg";
 import NewProduct from "../new arrival/NewProduct";
+import Coupon from "../coupon/Coupon";
+import BrandContainer from "../brand/BrandContainer";
+import ReviewCard from "../review/ReviewCard";
 export default function Home() {
   return (
     <>
@@ -16,6 +19,9 @@ export default function Home() {
         <BestSelling></BestSelling>
         <Offer></Offer>
         <NewProduct></NewProduct>
+        <Coupon></Coupon>
+        <BrandContainer></BrandContainer>
+        <ReviewCard></ReviewCard>
       </div>
     </>
   );

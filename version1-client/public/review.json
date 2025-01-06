@@ -1,0 +1,62 @@
+[
+  {
+    "name": "John Doe",
+    "picture": "https://randomuser.me/api/portraits/men/1.jpg",
+    "review": 4.5,
+    "occupation": "Software Engineer"
+  },
+  {
+    "name": "Jane Smith",
+    "picture": "https://randomuser.me/api/portraits/women/1.jpg",
+    "review": 5.0,
+    "occupation": "Graphic Designer"
+  },
+  {
+    "name": "Robert Brown",
+    "picture": "https://randomuser.me/api/portraits/men/2.jpg",
+    "review": 4.0,
+    "occupation": "Data Scientist"
+  },
+  {
+    "name": "Emily Davis",
+    "picture": "https://randomuser.me/api/portraits/women/2.jpg",
+    "review": 3.5,
+    "occupation": "Marketing Specialist"
+  },
+  {
+    "name": "Michael Wilson",
+    "picture": "https://randomuser.me/api/portraits/men/3.jpg",
+    "review": 4.8,
+    "occupation": "Photographer"
+  },
+  {
+    "name": "Sophia Garcia",
+    "picture": "https://randomuser.me/api/portraits/women/3.jpg",
+    "review": 4.7,
+    "occupation": "Content Writer"
+  },
+  {
+    "name": "James Martinez",
+    "picture": "https://randomuser.me/api/portraits/men/4.jpg",
+    "review": 3.9,
+    "occupation": "Product Manager"
+  },
+  {
+    "name": "Olivia Hernandez",
+    "picture": "https://randomuser.me/api/portraits/women/4.jpg",
+    "review": 5.0,
+    "occupation": "UX/UI Designer"
+  },
+  {
+    "name": "William Lee",
+    "picture": "https://randomuser.me/api/portraits/men/5.jpg",
+    "review": 4.2,
+    "occupation": "Mechanical Engineer"
+  },
+  {
+    "name": "Isabella Clark",
+    "picture": "https://randomuser.me/api/portraits/women/5.jpg",
+    "review": 4.6,
+    "occupation": "Interior Designer"
+  }
+]

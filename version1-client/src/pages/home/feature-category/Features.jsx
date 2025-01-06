@@ -16,7 +16,7 @@ export default function Features() {
     <div className=" mb-10">
       <h1 className="py-5 text-3xl text-center">Featured Categories</h1>
       <div>
-        <Marquee>
+        <Marquee pauseOnHover={true} className="cursor-pointer">
           <div className="flex flex-col px-5">
             <span
               className="text-3xl  bg-[#f3f3f1] border-2 rounded-full
