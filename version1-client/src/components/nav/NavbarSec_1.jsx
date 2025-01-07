@@ -4,9 +4,11 @@ import { CiShoppingCart } from "react-icons/ci";
 import { IoIosClose, IoIosArrowForward, IoIosArrowDown } from "react-icons/io";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function NavbarSec_1() {
   const [categories, setCategories] = useState([]);
+  const navigate = useNavigate();
   useEffect(() => {
     axios.get("menu.json").then((res) => {
       setCategories(res.data);
@@ -23,7 +25,9 @@ export default function NavbarSec_1() {
   const toggleSubcategories = (index) => {
     setOpenCategory(openCategory === index ? null : index);
   };
-
+  const handleLogin = () => {
+    navigate("/login");
+  };
   return (
     <div>
       {/* Navbar Section 1 */}
@@ -38,11 +42,14 @@ export default function NavbarSec_1() {
               >
                 <CiMenuBurger />
               </button>
-              <img
-                className="w-10 sm:w-12 md:w-24 h-10 md:h-12 m-2"
-                src="https://i.ibb.co.com/gv291qV/G-Glogo.png"
-                alt="Logo"
-              />
+              <Link to={"/"}>
+                {" "}
+                <img
+                  className="w-10 sm:w-12 md:w-24 h-10 md:h-12 m-2"
+                  src="https://i.ibb.co.com/gv291qV/G-Glogo.png"
+                  alt="Logo"
+                />
+              </Link>
             </div>
             <div className="flex justify-center gap-2">
               <div className="relative">
@@ -60,7 +67,10 @@ export default function NavbarSec_1() {
               </button>
             </div>
             <div className="hidden md:flex justify-between gap-2">
-              <button className="text-white text-3xl px-4 rounded-md hover:bg-orange-600">
+              <button
+                onClick={handleLogin}
+                className="text-white text-3xl px-4 rounded-md hover:bg-orange-600"
+              >
                 <IoPersonCircleOutline />
               </button>
               <button className="text-white text-4xl p-2 rounded-md hover:bg-[#f26e21]">
