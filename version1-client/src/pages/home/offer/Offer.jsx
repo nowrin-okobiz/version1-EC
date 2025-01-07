@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 // import OfferBanner from "./OfferBanner";
 import axios from "axios";
-import ProductCard from "../../../components/product-card/ProductCard";
+import ProductCard from "../../../components/card/product-card/ProductCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import { Navigation } from "swiper/modules";
 import { Autoplay } from "swiper/modules";

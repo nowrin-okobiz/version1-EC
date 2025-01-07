@@ -9,7 +9,8 @@ import img4 from "../../../assets/bannerImg/04.jpg";
 import NewProduct from "../new arrival/NewProduct";
 import Coupon from "../coupon/Coupon";
 import BrandContainer from "../brand/BrandContainer";
-import ReviewCard from "../review/ReviewCard";
+// import ReviewCard from "../review/ReviewCard";
+import Review from "../review/Review";
 export default function Home() {
   return (
     <>
@@ -21,7 +22,7 @@ export default function Home() {
         <NewProduct></NewProduct>
         <Coupon></Coupon>
         <BrandContainer></BrandContainer>
-        <ReviewCard></ReviewCard>
+        <Review></Review>
       </div>
     </>
   );

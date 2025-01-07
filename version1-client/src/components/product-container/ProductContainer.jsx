@@ -3,7 +3,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { Autoplay, Navigation } from "swiper/modules";
-import ProductCard from "../product-card/ProductCard";
+import ProductCard from "../card/product-card/ProductCard";
 export default function ProductContainer({ product }) {
   return (
     <div>

@@ -1,10 +1,11 @@
-const ReviewCard = () => {
+const ReviewCard = ({ data }) => {
+  const { name, picture, review, occupation, description } = data;
   return (
     <div className="flex flex-col sm:flex-row items-center max-w-md sm:max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6">
       {/* Image Section */}
       <div className="flex-shrink-0">
         <img
-          src="https://via.placeholder.com/150" // Replace with actual image URL
+          src={picture} // Replace with actual image URL
           alt="Jone Copper"
           className="w-30 h-full  border-4 border-blue-500"
         />
@@ -14,11 +15,8 @@ const ReviewCard = () => {
       <div className="sm:ml-6 text-center sm:text-left mt-4 sm:mt-0">
         <blockquote>
           <p className="text-gray-600 text-lg">
-            <span className="text-blue-500 text-2xl font-bold">“</span> Working
-            with Jone was a game-changer for our project! Her keen eye for
-            detail and creative approach to product design elevated our concept
-            beyond our expectations. We look forward to collaborating on future
-            projects.
+            <span className="text-blue-500 text-2xl font-bold">“</span>{" "}
+            {description}
           </p>
         </blockquote>
 
@@ -39,8 +37,8 @@ const ReviewCard = () => {
 
         {/* Name Section */}
         <div className="mt-4">
-          <h4 className="font-semibold text-lg text-gray-800">Jone Copper</h4>
-          <p className="text-sm text-gray-500">UI/UX Designer</p>
+          <h4 className="font-semibold text-lg text-gray-800">{name}</h4>
+          <p className="text-sm text-gray-500">{occupation}</p>
         </div>
       </div>
     </div>

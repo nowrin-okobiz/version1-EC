@@ -3,60 +3,70 @@
     "name": "John Doe",
     "picture": "https://randomuser.me/api/portraits/men/1.jpg",
     "review": 4.5,
+    "description": "Great service! The product quality and support exceeded my expectations.",
     "occupation": "Software Engineer"
   },
   {
     "name": "Jane Smith",
     "picture": "https://randomuser.me/api/portraits/women/1.jpg",
     "review": 5.0,
+    "description": "Outstanding experience! Highly recommend for anyone looking for top-notch design work.",
     "occupation": "Graphic Designer"
   },
   {
     "name": "Robert Brown",
     "picture": "https://randomuser.me/api/portraits/men/2.jpg",
     "review": 4.0,
+    "description": "Good experience overall, but there’s room for improvement in communication.",
     "occupation": "Data Scientist"
   },
   {
     "name": "Emily Davis",
     "picture": "https://randomuser.me/api/portraits/women/2.jpg",
     "review": 3.5,
+    "description": "Average experience. The service was okay but could be more responsive.",
     "occupation": "Marketing Specialist"
   },
   {
     "name": "Michael Wilson",
     "picture": "https://randomuser.me/api/portraits/men/3.jpg",
     "review": 4.8,
+    "description": "Amazing work! The photography captured every detail beautifully.",
     "occupation": "Photographer"
   },
   {
     "name": "Sophia Garcia",
     "picture": "https://randomuser.me/api/portraits/women/3.jpg",
     "review": 4.7,
+    "description": "Creative and professional. Delivered high-quality content on time.",
     "occupation": "Content Writer"
   },
   {
     "name": "James Martinez",
     "picture": "https://randomuser.me/api/portraits/men/4.jpg",
     "review": 3.9,
+    "description": "Decent work, but I expected more attention to detail in the project.",
     "occupation": "Product Manager"
   },
   {
     "name": "Olivia Hernandez",
     "picture": "https://randomuser.me/api/portraits/women/4.jpg",
     "review": 5.0,
+    "description": "Absolutely fantastic! The designs were intuitive and visually stunning.",
     "occupation": "UX/UI Designer"
   },
   {
     "name": "William Lee",
     "picture": "https://randomuser.me/api/portraits/men/5.jpg",
     "review": 4.2,
+    "description": "Good job overall! The mechanical design met most of our specifications.",
     "occupation": "Mechanical Engineer"
   },
   {
     "name": "Isabella Clark",
     "picture": "https://randomuser.me/api/portraits/women/5.jpg",
     "review": 4.6,
+    "description": "Beautiful designs with great attention to detail. Very satisfied!",
     "occupation": "Interior Designer"
   }
 ]
