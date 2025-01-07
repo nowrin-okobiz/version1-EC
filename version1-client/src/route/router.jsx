@@ -6,6 +6,7 @@ import BestSellingContainer from "../pages/best-selling-page/best-selling-layout
 import NewProductContainer from "../pages/new arrival page/new-arrival-layout/NewProductContainer";
 import BrandPage from "../pages/brand page/BrandPage";
 import ReviewContainer from "../pages/review page/review-page-layout/ReviewContainer";
+import Login from "../pages/login/Login";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "review",
         element: <ReviewContainer></ReviewContainer>,
+      },
+      {
+        path: "login",
+        element: <Login></Login>,
       },
     ],
   },
