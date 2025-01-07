@@ -6,7 +6,7 @@ export default function BestSelling() {
   // console.log(data);
   return (
     <>
-      <Title title={"Best Selling"} url={"/bestSell"}></Title>
+      <Title title={"Best Selling"} url={"/bestProduct"}></Title>
       <div className=" pb-16">
         <ProductContainer key={data.id} product={data}></ProductContainer>
       </div>

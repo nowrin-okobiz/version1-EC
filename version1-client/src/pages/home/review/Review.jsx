@@ -10,7 +10,7 @@ export default function Review() {
   console.log(data);
   return (
     <div>
-      <Title title={"Our Reviews"}></Title>
+      <Title title={"Our Reviews"} url={"/review"}></Title>
       <div>
         <Swiper
           slidesPerView={1}

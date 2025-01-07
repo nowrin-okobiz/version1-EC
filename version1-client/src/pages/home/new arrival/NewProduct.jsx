@@ -8,7 +8,7 @@ export default function NewProduct() {
 
   return (
     <div className="my-2">
-      <Title title={"New Arrival"}></Title>
+      <Title title={"New Arrival"} url={"/newProduct"}></Title>
       <div>
         <ProductContainer key={data.id} product={data}></ProductContainer>
       </div>

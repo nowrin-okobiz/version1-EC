@@ -8,7 +8,7 @@ import Title from "../../../components/title/Title";
 export default function BrandContainer() {
   return (
     <div className="my-4">
-      <Title title={"Brand"}></Title>
+      <Title title={"Brand"} url={"/brand"}></Title>
       <Marquee pauseOnHover={true} className="cursor-pointer">
         <div className=" p-4">
           {/* <img src={brand1} alt="" /> */}

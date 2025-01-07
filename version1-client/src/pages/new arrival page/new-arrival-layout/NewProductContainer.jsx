@@ -1,10 +1,9 @@
+import CoverImage from "../../../components/coverImage/CoverImage";
+import offerImg from "../../../assets/offerBanner/year-end-offer.png";
 import UseFetch from "../../../hooks/UseFetch";
 import ProductCard from "../../../components/card/product-card/ProductCard";
-import offerImg from "../../../assets/offerBanner/year-end-offer.png";
-import CoverImage from "../../../components/coverImage/CoverImage";
-export default function BestSellingContainer() {
+export default function NewProductContainer() {
   const [data] = UseFetch("topProduct.json");
-  // console.log(data);
   return (
     <div className="max-w-screen-xl xl:max-w-screen-2xl mx-auto pt-20 md:pt-36">
       <CoverImage image={offerImg}></CoverImage>

@@ -15,7 +15,7 @@ const ReviewCard = ({ data }) => {
       <div className="sm:ml-6 text-center sm:text-left mt-4 sm:mt-0">
         <blockquote>
           <p className="text-gray-600 text-lg">
-            <span className="text-blue-500 text-2xl font-bold">“</span>{" "}
+            <span className="text-blue-500 text-base  font-bold">“</span>{" "}
             {description}
           </p>
         </blockquote>
