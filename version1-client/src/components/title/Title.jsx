@@ -1,7 +1,7 @@
 import { MdArrowForwardIos } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-export default function Title({ title }) {
+export default function Title({ title, url }) {
   return (
     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
       {/* Title */}
@@ -11,7 +11,7 @@ export default function Title({ title }) {
 
       {/* Show More Button */}
       <Link
-        to="#"
+        to={`${url}`}
         className="flex items-center text-[#f26e21] hover:text-[#d55c1c] transition duration-300"
       >
         <span className="font-semibold text-base md:text-lg">Show More</span>

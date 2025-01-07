@@ -9,7 +9,7 @@ export default function Review() {
   const [data] = UseFetch("review.json");
   console.log(data);
   return (
-    <div className="bg-[#d8d8d6]">
+    <div>
       <Title title={"Our Reviews"}></Title>
       <div>
         <Swiper

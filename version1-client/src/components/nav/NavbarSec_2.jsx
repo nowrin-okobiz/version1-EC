@@ -10,15 +10,17 @@ export default function NavbarSec_2() {
   useEffect(() => {
     // Simulating data fetching (replace with API call to get menu.json)
     axios.get("menu.json").then((res) => {
-      setCategories(res.data);
+      console.log(res.data);
+      setCategories(res.data || []);
     });
   }, []);
-
+  console.log(categories);
   // First six categories for the main navigation
-  const visibleCategories = categories.slice(0, 6);
+  const visibleCategories = categories?.slice(0, 6);
+  console.log(visibleCategories);
 
   // Remaining categories for the hamburger menu
-  const hiddenCategories = categories.slice(6);
+  const hiddenCategories = categories?.slice(6);
 
   const handleCategoryClick = (categoryName) => {
     // Navigate to the category page
@@ -38,7 +40,7 @@ export default function NavbarSec_2() {
             <div className="max-w-5xl mx-auto text-white">
               <ul className="flex space-x-6 justify-center">
                 {/* Main navigation categories */}
-                {visibleCategories.map((category, index) => (
+                {visibleCategories?.map((category, index) => (
                   <li key={index} className="relative group">
                     <button
                       onClick={() => handleCategoryClick(category.name)}
