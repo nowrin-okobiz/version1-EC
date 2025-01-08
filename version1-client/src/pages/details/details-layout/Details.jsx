@@ -107,7 +107,7 @@ export default function Details() {
             <h2 className="text-3xl font-bold ">
               TK. <span className="text-3xl font-bold ">6500</span>
             </h2>
-            <h2 className=" line-through text-xl text-slate-600">
+            <h2 className=" line-through text-xl text-slate-400">
               TK. <span className=" font-bold ">7900</span>
             </h2>
           </div>
