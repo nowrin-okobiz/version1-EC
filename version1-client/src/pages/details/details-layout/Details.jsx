@@ -102,6 +102,7 @@ export default function Details() {
             Apple iPad Mini 7 WiFi 128GB Starlight
           </h1>
           <span className="text-base text-slate-600">Not reviewed yet</span>
+          {/* price section */}
           <div className="flex gap-3 items-center">
             <h2 className="text-3xl font-bold ">
               TK. <span className="text-3xl font-bold ">6500</span>
@@ -110,24 +111,7 @@ export default function Details() {
               TK. <span className=" font-bold ">7900</span>
             </h2>
           </div>
-          <div className="text-gray-800">
-            {/* Display truncated or full text based on state */}
-            <p>
-              {showFullText || !isTruncated
-                ? text
-                : `${words.slice(0, maxWords).join(" ")}...`}
-            </p>
 
-            {/* See More/See Less Button */}
-            {isTruncated && (
-              <button
-                onClick={() => setShowFullText(!showFullText)}
-                className="text-blue-500 mt-2"
-              >
-                {showFullText ? "See Less" : "See More"}
-              </button>
-            )}
-          </div>
           {/* size section */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Select Size:</h3>
@@ -180,6 +164,25 @@ export default function Details() {
             <div>
               <h1 className="px-5 py-3 bg-black text-white">+ Add To Card</h1>
             </div>
+          </div>
+          {/* description  */}
+          <div className="text-gray-800">
+            {/* Display truncated or full text based on state */}
+            <p>
+              {showFullText || !isTruncated
+                ? text
+                : `${words.slice(0, maxWords).join(" ")}...`}
+            </p>
+
+            {/* See More/See Less Button */}
+            {isTruncated && (
+              <button
+                onClick={() => setShowFullText(!showFullText)}
+                className="text-blue-500 mt-2"
+              >
+                {showFullText ? "See Less" : "See More"}
+              </button>
+            )}
           </div>
         </div>
       </div>
