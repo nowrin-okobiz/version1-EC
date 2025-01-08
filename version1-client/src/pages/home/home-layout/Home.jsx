@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Banner img1={img1} img2={img2} img3={img3} img4={img4}></Banner>
-      <div className="max-w-screen-xl xl:max-w-screen-2xl mx-auto ">
+      <div className="max-w-screen-xl xl:max-w-screen-2xl mx-auto px-5">
         <Features></Features>
         <BestSelling></BestSelling>
         <Offer></Offer>

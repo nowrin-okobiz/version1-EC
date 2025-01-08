@@ -8,7 +8,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Open Sans', 'sans-serif'], // Add Open Sans with a fallback
+        // sans: ['Open Sans', 'sans-serif'], // Add Open Sans with a fallback
+        rajdhani: ['Rajdhani', 'sans-serif'], 
       },
     },
   },

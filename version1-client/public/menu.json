@@ -2,11 +2,11 @@
 { "name": "Phone", "subcategories": ["Smartphones", "Feature Phones"] },
 { "name": "Laptop", "subcategories": ["Gaming Laptops", "Ultrabooks"] },
 { "name": "Accessories", "subcategories": ["Chargers", "Cables"] },
-{ "name": "Cameras", "subcategories": [] }, 
-{ "name": "Smartwatches", "subcategories": [] }, 
+{ "name": "Cameras", "subcategories": [""] }, 
+{ "name": "Smartwatches", "subcategories": [""] }, 
 { "name": "Drones", "subcategories": ["Quadcopters", "Mini Drones"] },
-{ "name": "Gaming", "subcategories": [] }, 
-{ "name": "Printers", "subcategories": [] },
+{ "name": "Gaming", "subcategories": [""] }, 
+{ "name": "Printers", "subcategories": [""] },
 { "name": "Tablets", "subcategories": ["Android Tablets", "iPads"] },
-{ "name": "Networking", "subcategories": [] }
+{ "name": "Networking", "subcategories": [""] }
 ] 
