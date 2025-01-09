@@ -49,7 +49,7 @@ const Register = () => {
             <div className="relative">
               <input
                 type="password"
-                placeholder="Password"
+                placeholder="Confirm Password"
                 className="w-full px-4 py-3 border rounded-lg bg-gray-50 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
               <button
@@ -78,7 +78,7 @@ const Register = () => {
           {/* submit field */}
           <button
             type="submit"
-            className="mt-6 w-full bg-orange-500 text-white py-3 rounded-lg font-medium text-sm md:text-base hover:bg-orange-600"
+            className=" mt-6 w-full bg-gradient-to-r from-orange-400 to-pink-500 text-white py-2 md:py-3 rounded-md hover:opacity-90 text-sm md:text-base font-medium"
           >
             Create an Account
           </button>
