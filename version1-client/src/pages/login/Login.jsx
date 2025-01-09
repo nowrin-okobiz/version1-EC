@@ -1,37 +1,32 @@
 const Login = () => {
   return (
-    <div className="max-w-screen-xl xl:max-w-screen-2xl mx-auto pt-16 md:pt-28 px-4">
-      <div className="flex justify-center items-center h-screen bg-gray-100">
-        <div className="bg-white p-8 rounded-lg shadow-lg max-w-sm w-full">
+    <div className="max-w-screen-xl mx-auto pt-8 md:pt-16 px-4">
+      <div className="flex justify-center items-center min-h-screen bg-gray-100">
+        <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg max-w-sm w-full">
           <div className="flex flex-col items-center mb-6">
-            {/* <img
-              src="/path/to/your-logo.png"
-              alt="Logo"
-              className="h-16 w-16"
-            /> */}
-            <h1 className="text-xl font-semibold text-gray-800 mt-4">
-              We are The Lotus Team
+            <h1 className="text-lg md:text-xl font-semibold text-gray-800 mt-2 text-center">
+              Welcome to The Lotus Team
             </h1>
           </div>
           <form>
             <div className="mb-4">
               <label
-                htmlFor="username"
-                className="block text-sm font-medium text-gray-700"
+                htmlFor="useremail"
+                className="block text-sm md:text-base font-medium text-gray-700"
               >
-                Username
+                Email
               </label>
               <input
-                type="text"
-                id="username"
-                placeholder="Enter your username"
+                type="email"
+                id="useremail"
+                placeholder="Enter your email"
                 className="mt-1 block w-full px-3 py-2 border rounded-md text-gray-700 bg-gray-50 focus:ring-indigo-500 focus:border-indigo-500"
               />
             </div>
             <div className="mb-4">
               <label
                 htmlFor="password"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm md:text-base font-medium text-gray-700"
               >
                 Password
               </label>
@@ -44,7 +39,7 @@ const Login = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-orange-400 to-pink-500 text-white py-2 rounded-md hover:opacity-90"
+              className="w-full bg-gradient-to-r from-orange-400 to-pink-500 text-white py-2 md:py-3 rounded-md hover:opacity-90 text-sm md:text-base font-medium"
             >
               Log In
             </button>
@@ -56,8 +51,11 @@ const Login = () => {
           </div>
           <div className="mt-6 text-center">
             <p className="text-sm text-gray-600">
-              Don't have an account?{" "}
-              <a href="#" className="text-red-500 font-medium hover:underline">
+              Do not have an account?{" "}
+              <a
+                href="/register"
+                className="text-red-500 font-medium hover:underline"
+              >
                 Register
               </a>
             </p>

@@ -3,7 +3,7 @@ import ProductContainer from "../../../components/product-container/ProductConta
 import Title from "../../../components/title/Title";
 export default function BestSelling() {
   const [data] = UseFetch("topProduct.json");
-  // console.log(data);
+  console.log(data);
   return (
     <>
       <Title title={"Best Selling"} url={"/bestProduct"}></Title>

@@ -7,7 +7,7 @@ import Title from "../../../components/title/Title";
 
 export default function Review() {
   const [data] = UseFetch("review.json");
-  console.log(data);
+  // console.log(data);
   return (
     <div>
       <Title title={"Our Reviews"} url={"/review"}></Title>

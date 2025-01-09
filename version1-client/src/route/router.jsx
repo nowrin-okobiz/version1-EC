@@ -7,6 +7,7 @@ import NewProductContainer from "../pages/new arrival page/new-arrival-layout/Ne
 import BrandPage from "../pages/brand page/BrandPage";
 import ReviewContainer from "../pages/review page/review-page-layout/ReviewContainer";
 import Login from "../pages/login/Login";
+import Register from "../pages/register/Register";
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "login",
         element: <Login></Login>,
+      },
+      {
+        path: "register",
+        element: <Register></Register>,
       },
     ],
   },
