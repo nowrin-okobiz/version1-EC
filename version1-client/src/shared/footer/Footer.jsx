@@ -92,7 +92,13 @@ export default function Footer() {
           {/* 2nd column */}
           <div className="col-span-3 text-start md:p-5  ">
             <ul className="">
-              <li className="font-bold text-xl">Help Center</li>
+              <Link to={"/contact"}>
+                {" "}
+                <li className="font-bold text-xl hover:text-[#f26e21] cursor-pointer">
+                  Contact
+                </li>
+              </Link>
+
               <Link>
                 <li className="py-2">
                   <div className="flex items-center gap-2">

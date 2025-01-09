@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Error() {
   return (
-    <div className="md:pt-20">
+    <div className="max-w-screen-xl xl:max-w-screen-2xl mx-auto md:pt-20">
       <div className=" w-full h-screen bg-[url('https://freefrontend.com/assets/img/html-css-404-page-templates/HTML-404-Error-Example-3.png')] bg-no-repeat bg-cover bg-center pt-20">
         {/* <div className="col-span-4">
         <img
@@ -25,7 +25,7 @@ export default function Error() {
               </span>
             </p>
             {/* <Lottie animationData={groovyWalkAnimation} /> */}
-            <button className="p-10 border-2 border-cyan-600 rounded-lg px-20 mt-5 ">
+            <button className="p-5 md:p-10 border-2 border-cyan-600 rounded-lg px-20 mt-5 ">
               <Link to={"/"}>Go Back</Link>
             </button>
             {/* <p>

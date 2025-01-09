@@ -10,12 +10,17 @@ import Login from "../pages/login/Login";
 import Register from "../pages/register/Register";
 import About from "../pages/about/About";
 import Error from "../pages/error page/Error";
+import Contact from "../pages/contact/Contact";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
     children: [
+      {
+        path: "*",
+        element: <Error></Error>,
+      },
       {
         path: "",
         element: <Home></Home>,
@@ -45,16 +50,16 @@ const router = createBrowserRouter([
         element: <About></About>,
       },
       {
+        path: "contact",
+        element: <Contact></Contact>,
+      },
+      {
         path: "login",
         element: <Login></Login>,
       },
       {
         path: "register",
         element: <Register></Register>,
-      },
-      {
-        path: "*",
-        element: <Error></Error>,
       },
     ],
   },
