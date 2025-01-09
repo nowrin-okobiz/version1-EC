@@ -13,7 +13,7 @@ export default function Details() {
         <h1 className="text-2xl font-semibold md:py-10 py-5">
           You may also like
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-4 py-5">
           {data.map((item) => (
             <ProductCard item={item} key={item.id}></ProductCard>
           ))}

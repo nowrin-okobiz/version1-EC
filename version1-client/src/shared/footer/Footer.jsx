@@ -16,8 +16,12 @@ export default function Footer() {
         <div className=" grid md:grid-cols-12 gap-4 justify-between max-w-6xl mx-auto text-white md:p-6 p-2">
           {/* 1st column */}
           <div className="col-span-3 text-start md:p-5 ">
-            <ul className="">
-              <li className="font-bold text-xl">About US</li>{" "}
+            <ul className="cursor-pointer">
+              <Link to={"/about"}>
+                <li className="font-bold text-xl hover:text-[#f26e21] cursor-pointer">
+                  About US
+                </li>
+              </Link>{" "}
               <li className="py-2">
                 <div className="flex items-center gap-2">
                   {" "}

@@ -8,6 +8,8 @@ import BrandPage from "../pages/brand page/BrandPage";
 import ReviewContainer from "../pages/review page/review-page-layout/ReviewContainer";
 import Login from "../pages/login/Login";
 import Register from "../pages/register/Register";
+import About from "../pages/about/About";
+import Error from "../pages/error page/Error";
 
 const router = createBrowserRouter([
   {
@@ -39,12 +41,20 @@ const router = createBrowserRouter([
         element: <ReviewContainer></ReviewContainer>,
       },
       {
+        path: "about",
+        element: <About></About>,
+      },
+      {
         path: "login",
         element: <Login></Login>,
       },
       {
         path: "register",
         element: <Register></Register>,
+      },
+      {
+        path: "*",
+        element: <Error></Error>,
       },
     ],
   },
