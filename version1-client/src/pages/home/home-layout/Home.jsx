@@ -14,7 +14,9 @@ import Review from "../review/Review";
 export default function Home() {
   return (
     <>
-      <Banner img1={img1} img2={img2} img3={img3} img4={img4}></Banner>
+      <div className="pt-14">
+        <Banner img1={img1} img2={img2} img3={img3} img4={img4}></Banner>
+      </div>
       <div className="max-w-screen-xl xl:max-w-screen-2xl mx-auto px-5">
         <Features></Features>
         <BestSelling></BestSelling>

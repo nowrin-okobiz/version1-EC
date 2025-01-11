@@ -8,14 +8,15 @@ import { Link, useNavigate } from "react-router-dom";
 
 export default function NavbarSec_1() {
   const [categories, setCategories] = useState([]);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [openCategory, setOpenCategory] = useState(null);
   const navigate = useNavigate();
+
   useEffect(() => {
     axios.get("menu.json").then((res) => {
       setCategories(res.data);
     });
   }, []);
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [openCategory, setOpenCategory] = useState(null);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -25,63 +26,71 @@ export default function NavbarSec_1() {
   const toggleSubcategories = (index) => {
     setOpenCategory(openCategory === index ? null : index);
   };
+
   const handleLogin = () => {
     navigate("/login");
   };
+
   return (
     <div>
-      {/* Navbar Section 1 */}
-      <div className="nav-sec-1">
-        <div className="bg-[#191a20] h-[70px] p-2">
-          <div className="max-w-6xl flex gap-2 justify-between items-center mx-auto">
-            <div className="flex items-center">
-              <button
-                className="md:hidden flex text-white text-2xl"
-                onClick={toggleMenu}
-                aria-label="Toggle Menu"
-              >
-                <CiMenuBurger />
-              </button>
-              <Link to={"/"}>
-                {" "}
-                <img
-                  className="w-10 sm:w-12 md:w-24 h-10 md:h-12 m-2"
-                  src="https://i.ibb.co.com/gv291qV/G-Glogo.png"
-                  alt="Logo"
-                />
-              </Link>
+      {/* Navbar Section */}
+      <div className="bg-[#191a20] h-[70px] p-2">
+        <div className="max-w-7xl mx-auto flex justify-between items-center gap-4 px-3 md:px-6">
+          {/* Logo & Menu Toggle */}
+          <div className="flex items-center gap-3">
+            <button
+              className="md:hidden text-white text-2xl"
+              onClick={toggleMenu}
+              aria-label="Toggle Menu"
+            >
+              <CiMenuBurger />
+            </button>
+            <Link to="/">
+              <img
+                className="w-10 sm:w-12 md:w-24 h-10 md:h-12"
+                src="https://i.ibb.co.com/gv291qV/G-Glogo.png"
+                alt="Logo"
+              />
+            </Link>
+          </div>
+
+          {/* Search Bar */}
+          <div className="flex flex-1 justify-center gap-2">
+            <div className="relative w-full max-w-md">
+              <input
+                type="text"
+                className="w-full h-10 px-4 pr-10 border border-gray-300 rounded-md focus:outline-none"
+                placeholder="Search products"
+              />
+              <span className="absolute top-2 right-3 text-[#f26e21] text-2xl">
+                <CiSearch />
+              </span>
             </div>
-            <div className="flex justify-center gap-2">
-              <div className="relative">
-                <input
-                  type="text"
-                  className="w-44 md:w-[400px] h-9 p-3 border border-white rounded-md"
-                  placeholder="Search products"
-                />
-                <span className="text-[#f26e21] absolute text-2xl top-2 right-0 mr-3">
-                  <CiSearch />
-                </span>
-              </div>
-              <button className="bg-[#f26e21] h-9 px-4 rounded-md text-white">
-                Submit
-              </button>
-            </div>
-            <div className="hidden md:flex justify-between gap-2">
-              <button
-                onClick={handleLogin}
-                className="text-white text-3xl px-4 rounded-md hover:bg-orange-600"
-              >
-                <IoPersonCircleOutline />
-              </button>
-              <button className="text-white text-4xl p-2 rounded-md hover:bg-[#f26e21]">
-                <CiShoppingCart />
-              </button>
-            </div>
+            <button className="bg-[#f26e21] h-10 px-4 rounded-md text-white">
+              Submit
+            </button>
+          </div>
+
+          {/* Icons */}
+          <div className="hidden md:flex items-center gap-3">
+            <button
+              onClick={handleLogin}
+              className="text-white text-3xl hover:bg-orange-600 p-2 rounded-md"
+              aria-label="Login"
+            >
+              <IoPersonCircleOutline />
+            </button>
+            <button
+              className="text-white text-3xl hover:bg-orange-600 p-2 rounded-md"
+              aria-label="Shopping Cart"
+            >
+              <CiShoppingCart />
+            </button>
           </div>
         </div>
       </div>
 
-      {/* Hamburger Menu */}
+      {/* Mobile Menu */}
       {menuOpen && (
         <div className="fixed top-0 left-0 w-[75%] h-full bg-white shadow-lg z-50">
           <div className="flex justify-between items-center p-4 border-b">
@@ -95,7 +104,7 @@ export default function NavbarSec_1() {
             </button>
           </div>
           <ul className="mt-4">
-            <Link>
+            <Link to="/">
               <li className="pl-5 font-semibold p-2">Shop</li>
             </Link>
             <hr />
@@ -149,7 +158,7 @@ export default function NavbarSec_1() {
         </div>
       )}
 
-      {/* Overlay for Closing Menu */}
+      {/* Overlay */}
       {menuOpen && (
         <div
           className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40"

@@ -58,7 +58,7 @@ export default function Category() {
   };
 
   return (
-    <div className="max-w-sm mx-auto p-4 border-r-2 border-slate-600">
+    <div className="max-w-sm mx-auto p-4 border-r-2 border-slate-600 hidden md:block">
       <ul>
         {menuItems.map((item, index) => (
           <li key={index} className="border-b border-gray-300">
