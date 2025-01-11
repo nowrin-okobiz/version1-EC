@@ -95,6 +95,10 @@ export default function NavbarSec_1() {
             </button>
           </div>
           <ul className="mt-4">
+            <Link>
+              <li className="pl-5 font-semibold p-2">Shop</li>
+            </Link>
+            <hr />
             {categories.map((category, index) => (
               <li key={index} className="border-b">
                 <div

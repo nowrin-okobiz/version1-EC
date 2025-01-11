@@ -11,6 +11,7 @@ import Register from "../pages/register/Register";
 import About from "../pages/about/About";
 import Error from "../pages/error page/Error";
 import Contact from "../pages/contact/Contact";
+import Shop from "../pages/shop/shop-layout/Shop";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact></Contact>,
+      },
+      {
+        path: "shop",
+        element: <Shop></Shop>,
       },
       {
         path: "login",

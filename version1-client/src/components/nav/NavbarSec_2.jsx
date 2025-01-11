@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { CiMenuBurger } from "react-icons/ci";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function NavbarSec_2() {
   const [categories, setCategories] = useState([]);
@@ -37,6 +37,10 @@ export default function NavbarSec_2() {
           <div className="bg-black h-[50px] p-2">
             <div className="max-w-5xl mx-auto text-white">
               <ul className="flex space-x-6 justify-center">
+                <Link to={"/shop"}>
+                  {" "}
+                  <li className="font-semibold hover:text-blue-400">Shop |</li>
+                </Link>
                 {/* Render visible categories */}
                 {visibleCategories.map((category, index) => (
                   <li key={index} className="relative group">
