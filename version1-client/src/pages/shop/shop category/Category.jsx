@@ -39,7 +39,7 @@ export default function Category() {
     },
     {
       title: "Brand",
-      subcategories: [],
+      subcategories: ["COUGER", "ACEFAST", "VENTION", "DIESEL", "PNY."],
     },
   ];
   // Initialize all sections as open by default
@@ -58,7 +58,7 @@ export default function Category() {
   };
 
   return (
-    <div className="max-w-sm mx-auto p-4">
+    <div className="max-w-sm mx-auto p-4 border-r-2 border-slate-600">
       <ul>
         {menuItems.map((item, index) => (
           <li key={index} className="border-b border-gray-300">
