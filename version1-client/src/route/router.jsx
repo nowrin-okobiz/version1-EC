@@ -15,6 +15,7 @@ import Shop from "../pages/shop/shop-layout/Shop";
 import User from "../pages/user/User";
 import Privacy from "../pages/privacy page/Privacy";
 import CheckOut from "../pages/check out/CheckOut";
+import Confirmation from "../pages/thank you page/confirm/confirmation";
 
 const router = createBrowserRouter([
   {
@@ -72,6 +73,10 @@ const router = createBrowserRouter([
       {
         path: "checkout",
         element: <CheckOut></CheckOut>,
+      },
+      {
+        path: "confirm",
+        element: <Confirmation></Confirmation>,
       },
       {
         path: "login",
