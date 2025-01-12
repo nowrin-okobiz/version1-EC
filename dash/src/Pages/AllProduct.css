@@ -1,0 +1,13 @@
+.all-product-container {
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.responsive-table .ant-table {
+  overflow-x: auto;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
