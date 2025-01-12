@@ -158,7 +158,19 @@ export default function Footer() {
                   Delivery info
                 </motion.li>
               </Link>
-              <Link>
+              <Link to={"/privacy"}>
+                {" "}
+                <motion.li
+                  className="py-2 "
+                  whileHover={{
+                    x: 4,
+                    color: "#f26e21",
+                  }}
+                >
+                  Privacy Policy
+                </motion.li>
+              </Link>
+              <Link to={"/about"}>
                 {" "}
                 <motion.li
                   className="py-2 "
