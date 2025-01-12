@@ -13,6 +13,7 @@ import Error from "../pages/error page/Error";
 import Contact from "../pages/contact/Contact";
 import Shop from "../pages/shop/shop-layout/Shop";
 import User from "../pages/user/User";
+import Privacy from "../pages/privacy page/Privacy";
 
 const router = createBrowserRouter([
   {
@@ -62,6 +63,10 @@ const router = createBrowserRouter([
       {
         path: "user",
         element: <User></User>,
+      },
+      {
+        path: "privacy",
+        element: <Privacy></Privacy>,
       },
       {
         path: "login",
